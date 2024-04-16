@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Meeting Minutes</title>
+        <link href="images/favicon.ico" rel="icon">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="/">Improved Version Coming Soon</a>
+            </nav>
+            <h1>Welcome To <i>Meeting Minutes</i></h1>
+            <h2>Your tool for never falling behind in meetings.</h2>
+        </header>
+        <main>
+            <hr>
+            <h3>Form to create meeting note.</h3>
+            <section>
+                <form>
+                    <div><strong>Title of Meeting</strong></div>
+                    <input type="text">
+                    <fieldset>
+                        <legend><b>Meeting type</b></legend>
+                        <input type="radio" name="type" id="inperson" value="In-Person">
+                        <label>In-Person</label>
+                        <input type="radio" name="type" id="hybrid" value="Hybrid">
+                        <label>Hybrid</label>
+                        <input type="radio" name="type" id="virtual" value="Virtual">
+                        <label>Virtual</label>
+                    </fieldset>
+                    <strong>File Type to Save Note</strong>
+                    <br>
+                    <select id="file_type">
+                        <option value="PDF">PDF</option>
+                        <option value="DOCX">DOCX</option>
+                        <option value="TXT">TXT</option>
+                    </select>
+                    <br>
+                    <span><b>Content</b></span>
+                    <br>
+                    <textarea id="content" placeholder="Enter content here..." rows="5" cols="100"></textarea>
+                    <br>
+                    <input type="checkbox" name="HR">
+                    <label>HR</label><br>
+                    <input type="checkbox" name="Weekly Review">
+                    <label>Weekly Review</label><br>
+                    <input type="checkbox" name="Other">
+                    <label>Other</label>
+                    <br>
+                    <label>Number of Attendees</label><br>
+                    <input list="attendees">
+                    <datalist id="attendees">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                    </datalist>
+                    <br>
+                    <label>Date of Meeting</label><br>
+                    <input type="date" min="1970-01-01" max="2024-04-15">
+                    <br><br>
+                    <button value="reset">Reset</button>
+                    <br><br>
+                    <input type="submit">
+                </form>
+            </section>
+            <hr>
+            <p>
+                Sometimes, life happens and we struggle to catch up on what we missed.
+                With meeting notes you can easily recall meetings so you don't miss out
+                on what's important.
+            </p>
+            <h4>A meeting note may include the following.</h4>
+            <ul>
+                <li>Title of the meeting</li>
+                <li>Date of the meeting</li>
+                <li>Subject of the meeting</li>
+                <li>...</li>
+            </ul>
+            <h4>You may also want to <em>prioritize</em> certain things when writing a meeting note</h4>
+            <ol>
+                <li>Title and date of the meeting</li>
+                <li>Important topics discussed</li>
+                <li>Upcoming tasks and deadlines</li>
+                <li>...</li>
+            </ol>
+            <label><strong>Example Video</strong></label><br>
+            <video controls width="400" height="300">
+                <source src="videos/video_recording.mp4" type="video/mp4">
+            </video>
+            <br>
+            <label><strong>Example Audio</strong></label><br>
+            <audio controls>
+                <source src="/audios/30_seconds_of_silence.mp3" type="audio/mp3">
+            </audio>
+            <hr>
+            <a href="images/example_meeting_note.png">Example Meeting Note</a>
+        </main>
+        <footer>
+            <br>
+            <img src="/images/img1.png" alt="Inspiring Image" width="1400" height="100">
+            <details>
+                <summary>More about meeting notes</summary>
+                <p>
+                    This website was developed without CSS and Javascript.
+                    This demonstrates the power of HTML even without other languages present.
+                </p>
+            </details>
+        </footer>
+    </body>
+</html>
