@@ -1,0 +1,32 @@
+/* Custom font from Google if it can't load it, it fallsback to Sans Serif*/
+body {
+    font-family: raleway, sans-serif;
+}
+
+h1 {
+    color: rgb(235,45,58);
+}
+
+h2 {
+    text-align: center;
+    color: orange;
+}
+
+h3 {
+    text-align: center;
+    color: hsl(120, 50%, 50%);
+}
+
+body > div{
+    div {
+        color: color-mix(sRGB, pink 75% , blue 25%);
+    }
+}
+
+nav {
+    text-align: center;
+    a {
+        color: #000;
+    }
+}
+
