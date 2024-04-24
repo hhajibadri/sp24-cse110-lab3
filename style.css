@@ -12,19 +12,28 @@ h1 {
 
 h2 {
     text-align: center;
-    color: orange;
+    color: red;
+    text-decoration: underline;
 }
 
-h3 {
+h1 ~ h2 {
+    font-size: larger;
+}
+
+h3, h4 {
     text-align: center;
     color: hsl(120, 50%, 50%);
+}
+
+h4 + p {
+    font-size: x-large;
 }
 
 label {
     color : color(from red sRGB r g b / 0.5);
 }
 
-body div {
+body > div {
     color: color-mix(in sRGB, pink 75% , blue);
 }
 
@@ -44,7 +53,7 @@ form {
     text-align: center;
 }
 
-input[type="text"] {
+[type="text"] {
     text-align: justify;
     width: 20%;
     border-width: thick;
@@ -56,15 +65,12 @@ input[type="text"] {
 }
 
 textarea {
-    text-decoration: underline;
     height: 100%;
     width: 50%;
     margin-top: 15px;
     margin-right: 10px;
     margin-bottom: 15px;
     margin-left: 10px;
-    text-align: center;
-    font-family: 'Jersey 10';
 }
 
 fieldset {
@@ -89,16 +95,45 @@ button:hover {
 }
 
 .flex.container {
-    background-color: rgb(30, 223, 88);
+    background-color: rgba(30, 223, 88, 0.308);
     display: flex;
     gap: 25px;
     align-content: space-between;
     flex-shrink: 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
-footer.grid.container {
+p:hover {
+    color: yellow;
+}
+
+.grid.container {
     display: grid;
-    grid-gap: 10;
+    grid-gap: 15px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid.container .grid-item {
+    justify-self: center;
+    border: 5px solid black;
+    padding: 5px;
+}
+
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+div.title_of_meeting {
+    color: hotpink;
+}
+
+@media (orientation: portrait) {
+    body {
+        background-color: white;
+    }
+}
+
+.grid-item:has(p) {
+    color: purple;
 }
 
