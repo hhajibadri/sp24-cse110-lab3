@@ -1,10 +1,12 @@
 /* Custom font from Google if it can't load it, it fallsback to Sans Serif*/
 body {
     font-family: raleway, sans-serif;
+    background-color: lightgrey;
 }
 
 h1 {
     color: rgb(235,45,58);
+    position: sticky;
 }
 
 h2 {
@@ -17,16 +19,58 @@ h3 {
     color: hsl(120, 50%, 50%);
 }
 
-body > div{
-    div {
-        color: color-mix(sRGB, pink 75% , blue 25%);
-    }
+label {
+    color : color(from red sRGB r g b / 0.5);
+}
+
+body div {
+    color: color-mix(in sRGB, pink 75% , blue);
 }
 
 nav {
     text-align: center;
-    a {
-        color: #000;
-    }
+}
+
+nav a {
+    color: #000;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"]{
+    text-align: justify;
+    width: 20%;
+    border-width: thick;
+    border-style: dashed;
+    border-color: red;
+    border-radius: 10%;
+    padding: 10px 5px 5px 10px;
+    margin: 20px 10px 10px 20px;
+}
+
+textarea {
+    text-decoration: underline;
+    height: 100%;
+    width: 50%;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+fieldset {
+    min-width: 100px;
+    width: 300px;
+    max-width: 500px;
+    margin: auto;
+    border: medium solid blue;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    position: inherit;
 }
 
