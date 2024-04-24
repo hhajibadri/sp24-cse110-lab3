@@ -35,6 +35,10 @@ nav a {
     color: #000;
 }
 
+a:active{
+    background-color: yellow;
+}
+
 form {
     text-align: center;
 }
@@ -72,5 +76,9 @@ fieldset {
     padding-bottom: 5px;
     padding-left: 10px;
     position: inherit;
+}
+
+button:hover {
+    color: red;
 }
 
