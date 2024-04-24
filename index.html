@@ -40,9 +40,9 @@
                 <strong>File Type to Save Note</strong>
                 <br>
                 <select id="file_type">
-                    <option value="PDF">PDF</option>
-                    <option value="DOCX">DOCX</option>
-                    <option value="TXT">TXT</option>
+                    <option id="file_type" value="PDF">PDF</option>
+                    <option id="file_type" value="DOCX">DOCX</option>
+                    <option id="file_type" value="TXT">TXT</option>
                 </select>
                 <br>
                 <span><b>Content</b></span>
@@ -72,41 +72,49 @@
                 <input type="submit">
             </form>
             <hr>
-            <section class="container">
-                <p>
-                    Sometimes, life happens and we struggle to catch up on what we missed.
-                    With meeting notes you can easily recall meetings so you don't miss out
-                    on what's important.
-                </p>
-                <h4>A meeting note may include the following.</h4>
-                <ul>
-                    <li>Title of the meeting</li>
-                    <li>Date of the meeting</li>
-                    <li>Subject of the meeting</li>
-                    <li>...</li>
-                </ul>
-                <h4>You may also want to <em>prioritize</em> certain things when writing a meeting note</h4>
-                <ol>
-                    <li>Title and date of the meeting</li>
-                    <li>Important topics discussed</li>
-                    <li>Upcoming tasks and deadlines</li>
-                    <li>...</li>
-                </ol>
-                <label><strong>Example Video</strong></label><br>
-                <video controls width="400" height="300">
-                    <source src="videos/video_recording.mp4" type="video/mp4">
-                </video>
-                <br>
-                <label><strong>Example Audio</strong></label><br>
-                <audio controls>
-                    <source src="audios/30_seconds_of_silence.mp3" type="audio/mp3">
-                </audio>
+            <section class="flex container">
+                <span>
+                    <h4>A meeting note may include the following.</h4>
+                    <ul>
+                        <li>Title of the meeting</li>
+                        <li>Date of the meeting</li>
+                        <li>Subject of the meeting</li>
+                        <li>...</li>
+                    </ul>
+                </span>
+                <span>
+                    <p>
+                        Sometimes, life happens and we struggle to catch up on what we missed.
+                        With meeting notes you can easily recall meetings so you don't miss out
+                        on what's important.
+                    </p>
+                </span>
+                <span>
+                    <h4>You may also want to <em>prioritize</em> certain things when writing a meeting note</h4>
+                    <ol>
+                        <li>Title and date of the meeting</li>
+                        <li>Important topics discussed</li>
+                        <li>Upcoming tasks and deadlines</li>
+                        <li>...</li>
+                        </ol>
+                </span>
+                <span>
+                    <label><strong>Example Video</strong></label><br>
+                    <video controls width="400" height="300">
+                        <source src="videos/video_recording.mp4" type="video/mp4">
+                    </video>
+                </span>
+                <span>
+                    <label><strong>Example Audio</strong></label><br>
+                    <audio controls>
+                        <source src="audios/30_seconds_of_silence.mp3" type="audio/mp3">
+                    </audio>
+                </span>
             </section>
             <hr>
             <a href="images/example_meeting_note.png">Example Meeting Note</a>
         </main>
-        <footer>
-            <br>
+        <footer class="grid container">
             <img src="images/img1.png" alt="Inspiring Image" width="1400" height="100">
             <details>
                 <summary>More about meeting notes</summary>
