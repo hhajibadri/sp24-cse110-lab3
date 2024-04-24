@@ -7,6 +7,7 @@ body {
 h1 {
     color: rgb(235,45,58);
     position: sticky;
+    font-family: 'Jersey 10';
 }
 
 h2 {
@@ -63,6 +64,7 @@ textarea {
     margin-bottom: 15px;
     margin-left: 10px;
     text-align: center;
+    font-family: 'Jersey 10';
 }
 
 fieldset {
@@ -80,5 +82,9 @@ fieldset {
 
 button:hover {
     color: red;
+}
+
+.container {
+    background-color: white;
 }
 
